@@ -1,0 +1,827 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+    text-decoration: none !important;
+}
+
+
+/* For Header CSS */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999;
+    flex-wrap: wrap;
+}
+
+.header.active {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.rightHeader {
+    display: flex;
+    align-items: center;
+}
+
+.signCart {
+    color: #524b4b;
+    font-size: 12px;
+}
+
+.rightIcon-space {
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.headerIcon-space {
+    padding-right: 10px;
+}
+
+.cartImg {
+    height: 27px;
+    width: 27px;
+    object-fit: cover;
+}
+
+.cartPadding {
+    padding-right: 5px;
+}
+
+.signIn {
+    align-items: unset;
+}
+
+.headerIcon {
+    font-size: 19px;
+}
+
+.ham {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #524b4b;
+}
+
+.ham1 {
+    margin-top: 4px;
+}
+
+.ham2 {
+    margin-top: 4px;
+}
+
+.Hamburger {
+    cursor: pointer;
+}
+
+
+/* .Hamburger:hover .ham0 {
+    transform: translateY(-2px);
+}
+
+.Hamburger:hover .ham2 {
+    transform: translateY(2px);
+} */
+
+.Hamburger.shift {
+    position: fixed;
+    right: 0;
+    transform: translateX(-363px);
+    transition: 0.4s;
+}
+
+.ham0,
+.ham1,
+.ham2 {
+    transition: 0.2s;
+}
+
+.ham0.firstCross {
+    transform: rotate(134deg) translateY(0px) translateX(-10px);
+}
+
+.ham1.secondCross {
+    opacity: 0;
+    transform: rotate(0deg) translateY(-12px) translateX(-22px)
+}
+
+.ham2.thirdCross {
+    transform: rotate(-135deg) translateY(19px) translateX(9px);
+}
+
+
+/* Header CSS End Here */
+
+
+/* For Banner CSS */
+
+.content {
+    padding-top: 67px;
+}
+
+.banner {
+    position: relative;
+}
+
+.bannerContent {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 572px;
+}
+
+.centerBannerImg {
+    background-color: #fff;
+    text-align: center;
+    padding: 6px 0px 16px 0px;
+    opacity: 0.8;
+}
+
+.fastFood {
+    margin-bottom: 0;
+}
+
+.newYorkPizza {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 3px;
+}
+
+.timeRatingStore {
+    display: flex;
+    background-color: #fff;
+    border-top: 1px solid #c7c3c3;
+    text-align: center;
+}
+
+.timeRatingStore :last-child {
+    border-right: 0;
+}
+
+.timeRatingStore .columntime p:last-child {
+    margin-bottom: 0;
+}
+
+.columntime {
+    border-right: 1px solid #c7c3c3;
+    padding: 10px 20px;
+    width: 33%;
+}
+
+.bannerImg {
+    height: 100px;
+    object-fit: cover;
+}
+
+.mainBannerImg {
+    width: 100%;
+    height: 284px;
+    object-fit: cover;
+}
+
+.rating {
+    padding-right: 10px;
+}
+
+.locationContainer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #c7c3c3;
+    padding: 10px 80px;
+    align-items: center;
+}
+
+.buttons {
+    border-radius: 5px;
+    padding: 6px 20px;
+    outline: none;
+    width: 164px;
+}
+
+.changeLocation {
+    margin-right: 8px;
+    color: green;
+    border: 1px solid green;
+}
+
+.detectLocation {
+    color: #da8190;
+    border: 1px solid #da8190;
+}
+
+.deliLocation {
+    font-weight: 500;
+}
+
+.footer {
+    background-color: #383333;
+    padding: 18px 0px;
+}
+
+.footerIcon {
+    padding: 0px 6px;
+}
+
+.footerText {
+    margin-bottom: 0;
+    color: #dcd6d6;
+    text-align: center;
+    font-weight: 300;
+}
+
+.buttonC {
+    display: flex;
+    padding-left: 20px;
+}
+
+
+/* Banner CSS End Here */
+
+
+/* Hamburger Menu CSS Start Here */
+
+.profileImg {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.profilC {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 2px solid #989696;
+    padding: 14px 0px 17px 34px;
+}
+
+.name p {
+    margin-bottom: 0;
+}
+
+.name {
+    line-height: normal;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.sideMenu {
+    position: fixed;
+    width: 350px;
+    top: 0;
+    right: 0;
+    background-color: #ffff;
+    z-index: 99999;
+    height: 100%;
+    transform: translateX(100%);
+    transition: 0.4s;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+    overflow: scroll;
+}
+
+.sideMenu.open {
+    transform: translateX(0);
+}
+
+.hamburgeMenus {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 24px 18px 34px;
+}
+
+.hamMenusName {
+    padding-left: 20px;
+}
+
+.linkMenu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: inherit;
+}
+
+.overlay {
+    background: #948d8d;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    display: none;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.overlay.active {
+    display: block;
+    transition: 0.5s;
+    opacity: 0.3;
+}
+
+.hamIcon {
+    font-size: 19px;
+}
+
+
+/* Hamburger Menu End Here */
+
+
+/* For Centre Content */
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #e4e5e7;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.panel-default>.panel-heading a {
+    /* display: block;
+    padding: 10px 15px; */
+}
+
+.up-icon::after {
+    content: "";
+    float: right;
+    background-image: url(../assets/icons/accordion-open.svg);
+    height: 12px;
+    width: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 15px;
+    bottom: 13px;
+    z-index: 999;
+}
+
+.down-icon.collapsed:after {
+    content: "";
+    background-image: url(../assets/icons/accordion-close.svg);
+    height: 12px;
+    width: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 15px;
+    bottom: 13px;
+    z-index: 999;
+}
+
+.imgContent {
+    display: flex;
+    width: 100%;
+    padding: 15px 33px;
+    /* background-color: black;
+    opacity: 0.7; */
+    z-index: 999;
+}
+
+.imageOverlay {
+    position: absolute;
+    height: 47px;
+    width: 100%;
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0.5;
+    background-color: #3a3333;
+}
+
+.rightAli {
+    width: 100%;
+    text-align: right;
+    color: #fff;
+    padding-right: 32px;
+}
+
+.coloff {
+    color: #fff;
+}
+
+.accorIcon {}
+
+.orderLink {
+    padding: 0;
+}
+
+.orderLink li a {
+    color: inherit;
+    font-size: 15px;
+    position: relative;
+}
+
+.orderLink li {
+    list-style-type: none;
+    padding-bottom: 16px;
+}
+
+.bodyImg {
+    height: max-content;
+    width: 100%;
+}
+
+.bodyCentreCon {
+    background-image: url(../assets/images/bodyImg_x399.jpg);
+}
+
+.centrePos {
+    display: flex;
+    padding: 20px 7%;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.links.active {
+    color: #5ec15e;
+}
+
+.links.active ::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    width: 2px;
+    height: 13px;
+    background-color: #5ec15e;
+    top: 3px;
+}
+
+.orderMenuContainer {
+    background-color: #fff;
+    width: 20%;
+    text-align: right;
+}
+
+.accContent {
+    padding-bottom: 0 !important;
+}
+
+.accordionCont {
+    width: 54%;
+    padding-right: 24px;
+    /* height: 829px;
+    overflow-y: scroll; */
+}
+
+.accordionCont::-webkit-scrollbar {
+    display: none;
+}
+
+.orderDetails {
+    width: 26%;
+    height: max-content;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 67px;
+}
+
+.accorderRate {}
+
+.yourOrderText {
+    padding: 13px 20px;
+    border-bottom: 1px solid #c7c3c3;
+}
+
+.yourOrderText span {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.calCont {
+    padding: 23px 23px 17px 20px;
+    height: 336px;
+    overflow-y: scroll;
+}
+
+.cal {
+    border-bottom: 1px solid #c7c3c3;
+    padding-bottom: 18px;
+}
+
+.orderRaw {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 18px;
+}
+
+.dot {
+    display: flex;
+    align-items: baseline;
+}
+
+.dotC {
+    position: relative;
+    height: 11px;
+    width: 11px;
+    border: 1px solid green;
+    margin-right: 8px;
+}
+
+.dotIns {
+    position: absolute;
+    display: block;
+    background-color: green;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    height: 5.5px;
+    width: 5.5px;
+    border-radius: 50%;
+}
+
+.orderName {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.orderRate {
+    display: flex;
+    align-content: center;
+}
+
+.calcula {
+    display: flex;
+    border: 1px solid;
+    border-radius: 4px;
+    width: 66px;
+    justify-content: space-around;
+    padding: 2px 0px;
+    margin-left: 13px;
+    height: 26px;
+}
+
+.extraMeat {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 77px 0px 19px;
+}
+
+.extrameatCol {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.orderRawCont .orderRaw:last-child {
+    padding-bottom: 2px;
+}
+
+.costo {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.costText {
+    color: #6b6262;
+    font-size: 8px;
+}
+
+.downAero {
+    padding-left: 10px;
+}
+
+.anuSpec {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+    border-bottom: 1px solid #c7c3c3;
+    padding: 9px 7px
+}
+
+.totalBillColumn {
+    padding-bottom: 5px;
+}
+
+.totalBill .totalBillColumn:last-child {
+    padding-bottom: 0;
+}
+
+.totalBill {
+    padding: 14px 7px;
+    border-bottom: 1px solid #c7c3c3;
+}
+
+.total {
+    font-size: 13px;
+}
+
+.totalorder {
+    margin-bottom: 0;
+    color: #5ab95e;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.calButton {
+    padding: 0px 24px 21px 24px;
+}
+
+.orderCal {
+    border-bottom: 1px solid #c7c3c3;
+    margin-bottom: 20px;
+}
+
+.checOutBtn {
+    outline: none;
+    width: 100%;
+    color: #fff;
+    background-color: #da3b3b;
+    border: none;
+    padding: 12px 0px;
+    cursor: pointer;
+}
+
+.accorImg {
+    height: 168px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.backImg {
+    background-image: url(../assets/images/acordionImg.jpg);
+    height: 168px;
+    display: flex !important;
+    align-items: flex-end;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.panelC {
+    margin-bottom: 0 !important;
+}
+
+.plus {
+    cursor: pointer;
+}
+
+.orderMenus {
+    height: 500px;
+    position: sticky;
+    top: 67px;
+    overflow: scroll;
+    padding: 0px 30px;
+}
+
+.panel-group {
+    margin-bottom: 0 !important;
+}
+
+
+/* Center Content CSS End Here */
+
+
+/* For responssivness */
+
+@media (max-width:720px) {
+    .orderDetails {
+        position: unset;
+    }
+    .centrePos {
+        flex-direction: column;
+    }
+    .accordionCont {
+        width: 100% !important;
+        padding-right: 0;
+        order: 2;
+    }
+    .orderDetails {
+        width: 100% !important;
+        order: 1;
+        margin-bottom: 26px;
+    }
+    .imgContent {
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width:886px) {
+    .orderMenuContainer {
+        display: none;
+    }
+}
+
+@media (max-width:1102px) {
+    .accordionCont {
+        width: 60%;
+    }
+    .orderDetails {
+        width: 40%;
+    }
+    .orderMenuContainer {
+        text-align: left;
+    }
+}
+
+@media (max-width:1140px) {
+    .centrePos {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width:1246px) {
+    .extraMeat {
+        padding: 0px 8px;
+    }
+}
+
+@media(max-width:618px) {
+    .bannerImg {
+        height: 108px;
+    }
+    .bannerContent {
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .header {
+        padding: 8px 20px;
+    }
+    .columntime {
+        padding: 11px 2px;
+        width: 100%;
+        border-bottom: 1px solid #c7c3c3;
+    }
+    .columntime p:first-child {
+        margin-bottom: 5px;
+    }
+    .rightIcon-space {
+        padding-right: 18px;
+    }
+    .timeRatingStore {
+        flex-direction: column;
+    }
+    .timeRatingStore :last-child {
+        border-right: 0;
+        border-bottom: 0;
+    }
+    .mainBannerImg {
+        height: max-content;
+    }
+}
+
+@media(max-width:439px) {
+    .imgContent {
+        padding: 15px 40px;
+    }
+    .down-icon.collapsed:after,
+    .up-icon::after {
+        height: 11px;
+        width: 18px;
+        right: 36px;
+        bottom: 15px;
+    }
+    .imgContent {
+        font-size: 12px;
+    }
+    .sideMenu {
+        width: 300px;
+    }
+    .Hamburger.shift {
+        transform: translateX(-315px);
+    }
+    .buttons {
+        padding: 6px 4px;
+    }
+}
+
+@media(max-width:714px) {
+    .locationContainer {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+    .buttonC {
+        padding: 15px 0px 0px 0px;
+        width: 100%;
+        justify-content: center;
+    }
+    .buttons {
+        width: auto;
+    }
+}
+
+
+/* For responssivness */
